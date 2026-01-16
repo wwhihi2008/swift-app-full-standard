@@ -72,17 +72,17 @@ class HomeViewController: DataRefreshingViewController {
         let formCell = FormFileUploaderCell()
         formCell.title = "项目1"
         formCell.isRequired = true
-        formCell.fileUploaderView.pickers = [FileUploadCameraPicker(fileType: .photo, sizeLimit: 0),
+        formCell.pickers = [FileUploadCameraPicker(fileType: .photo, sizeLimit: 0),
                                              FileUploadPhotosPicker(filter: .images, selectionLimit: 3, sizeLimits: [.image: 1 * 1000 * 1000]),
                                              FileUploadDocumentPicker(utis: [.item], sizeLimit: 10 * 1024 * 1024)]
-        formCell.fileUploaderView.fixedFiles = [.init(fileKey: "dev/1CED945F-33D9-4D97-8FBD-9D742AD7630D", fileName: "D2DA7887-AB8F-4385-9192-BB60C51519BC.jpeg", fileSize: 964308, fileType: "image/jpeg", fileUrl: .init(string: "https://static.xiaofengwang.com/dev/1CED945F-33D9-4D97-8FBD-9D742AD7630D")),
+        formCell.fixedFiles = [.init(fileKey: "dev/1CED945F-33D9-4D97-8FBD-9D742AD7630D", fileName: "D2DA7887-AB8F-4385-9192-BB60C51519BC.jpeg", fileSize: 964308, fileType: "image/jpeg", fileUrl: .init(string: "https://static.xiaofengwang.com/dev/1CED945F-33D9-4D97-8FBD-9D742AD7630D")),
                                                 .init(fileKey: "dev/68D7B498-4CC2-49BC-92CD-40B2ABA116E8", fileName: "F90979B1-18DD-472B-957E-C7E84EAF3BA4.jpeg", fileSize: 157407, fileType: "image/jpeg", fileUrl: .init(string: "https://static.xiaofengwang.com/dev/68D7B498-4CC2-49BC-92CD-40B2ABA116E8"))]
         formCell.value = [.init(fileKey: "dev/1CED945F-33D9-4D97-8FBD-9D742AD7630D", fileName: "D2DA7887-AB8F-4385-9192-BB60C51519BC.jpeg", fileSize: 964308, fileType: "image/jpeg", fileUrl: .init(string: "https://static.xiaofengwang.com/dev/1CED945F-33D9-4D97-8FBD-9D742AD7630D")),
                           .init(fileKey: "dev/68D7B498-4CC2-49BC-92CD-40B2ABA116E8", fileName: "F90979B1-18DD-472B-957E-C7E84EAF3BA4.jpeg", fileSize: 157407, fileType: "image/jpeg", fileUrl: .init(string: "https://static.xiaofengwang.com/dev/68D7B498-4CC2-49BC-92CD-40B2ABA116E8"))]
         
         let formCell2 = FormTextFieldCell()
         formCell2.title = "项目2"
-        formCell2.textFiled.placeholder = "请选择"
+        formCell2.placeholder = "请选择"
         formCell2.accessoryText = "55544"
         formCell2.isRequired = true
 

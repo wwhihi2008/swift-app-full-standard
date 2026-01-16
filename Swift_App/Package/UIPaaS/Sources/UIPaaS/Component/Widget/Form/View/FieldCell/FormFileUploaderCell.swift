@@ -38,6 +38,28 @@ open class FormFileUploaderCell: FormEditableFieldCell<[OSSFile]> {
         }
     }
     
+    open var pickers: [FileUploadPicker] {
+        get {
+            return fileUploaderView.pickers
+        }
+        set {
+            fileUploaderView.pickers = newValue
+        }
+    }
+    
+    open var filesLimit: Int {
+        get {
+            return fileUploaderView.filesLimit
+        }
+        set {
+            fileUploaderView.filesLimit = newValue
+        }
+    }
+    
+    open var isUploading: Bool {
+        return fileUploaderView.isUploading
+    }
+    
     private lazy var fileUploaderView: FileUploaderView = {
         let instance = FileUploaderView()
         instance.filesDidChangeHandler = { [weak self] _ in
