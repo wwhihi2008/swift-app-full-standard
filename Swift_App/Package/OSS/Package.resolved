@@ -1,0 +1,42 @@
+{
+  "originHash" : "680bd3569753af57f990efc8ec49ae240db2ca45b1c194588b6bbee8a80a4ff2",
+  "pins" : [
+    {
+      "identity" : "alibabacloud-oss-swift-sdk-v2",
+      "kind" : "remoteSourceControl",
+      "location" : "http://code.zcabc.com/ww666/alibabacloud-oss-swift-sdk-v2.git",
+      "state" : {
+        "revision" : "4d4425f55d522df03950ed4446484193be1779e4",
+        "version" : "0.1.1"
+      }
+    },
+    {
+      "identity" : "swift-asn1",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-asn1.git",
+      "state" : {
+        "revision" : "f70225981241859eb4aa1a18a75531d26637c8cc",
+        "version" : "1.4.0"
+      }
+    },
+    {
+      "identity" : "swift-crypto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-crypto.git",
+      "state" : {
+        "revision" : "176abc28e002a9952470f08745cd26fad9286776",
+        "version" : "3.13.3"
+      }
+    },
+    {
+      "identity" : "xmlcoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CoreOffice/XMLCoder.git",
+      "state" : {
+        "revision" : "b1e944cbd0ef33787b13f639a5418d55b3bed501",
+        "version" : "0.17.1"
+      }
+    }
+  ],
+  "version" : 3
+}
