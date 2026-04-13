@@ -133,18 +133,6 @@ open class OSSSession: @unchecked Sendable {
             }))
         }.value
     }
-    
-    private func getCredentials() async throws -> Credentials {
-        let url = configuration.authBaseURL.appendingPathComponent("/common/getOsStsCredentials")
-        var request = URLRequest(url: url)
-        request.addValue(token ?? "", forHTTPHeaderField: "x-bbmall-market-token")
-        let (data, _) = try await URLSession.shared.data(for: request)
-        let credentialsData = try JSONDecoder().decode(CredentialsData.self, from: data)
-        return Credentials(accessKeyId: credentialsData.AccessKeyId ?? "",
-                           accessKeySecret: credentialsData.AccessKeySecret ?? "",
-                           securityToken: credentialsData.SecurityToken,
-                           expiration: credentialsData.Expiration)
-    }
 }
 
 extension OSSSession {
